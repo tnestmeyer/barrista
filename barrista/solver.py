@@ -172,6 +172,7 @@ class Solver(object):
         """
         ret_dict = {'debug_info': False,
                     'weight_decay': None,
+                    'display': 1,
                     'lr_policy': 'fixed',
                     'regularization_type': 'L2',
                     'power': None,
