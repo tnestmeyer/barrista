@@ -164,6 +164,7 @@ def init_prebatch(self,  # pylint: disable=too-many-locals
             initializer=init_filler,
             initargs=(dummynet, filler_cbs, False))
 
+
 def run_prebatch(self,  # pylint: disable=too-many-branches
                  callbacks,
                  cbparams,
@@ -209,6 +210,7 @@ def run_prebatch(self,  # pylint: disable=too-many-branches
     for cb in callbacks:
         if not isinstance(cb, _monitoring.ParallelMonitor):
             cb(cbparams)
+
 
 def finalize_prebatch(self):
     """Cleanup workers and artifacts."""
