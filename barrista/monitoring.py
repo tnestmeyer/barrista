@@ -740,7 +740,7 @@ class RotatingMirroringMonitor(ParallelMonitor, Monitor):
 
     :param max_rotation_degrees: float.
       The rotation will be sampled uniformly from the interval
-      [-rotation_degrees, rotation_degrees[ for each sample.
+      [-rotation_degrees, rotation_degrees] for each sample.
 
     :param mirror_prob: float.
       The probability that horizontal mirroring occurs. Is as well sampled
